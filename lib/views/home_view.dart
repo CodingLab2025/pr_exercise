@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pr_exercise/views/clab_view.dart';
 import 'package:pr_exercise/views/led_view.dart';
 
 class HomeView extends StatelessWidget {
@@ -22,6 +23,16 @@ class HomeView extends StatelessWidget {
                 ));
               },
               child: const Text("레드"),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(
+                  builder: (context) {
+                    return const ClabView();
+                  },
+                ));
+              },
+              child: const Text("Coding Lab"),
             ),
           ],
         ),
