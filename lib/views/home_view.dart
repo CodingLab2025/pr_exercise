@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:pr_exercise/views/clab_view.dart';
 import 'package:pr_exercise/views/led_view.dart';
+import 'package:pr_exercise/views/noah_view.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
@@ -28,7 +29,21 @@ class HomeView extends StatelessWidget {
               onPressed: () {
                 Navigator.push(context, MaterialPageRoute(
                   builder: (context) {
+                    return const NoahView();
+                  },
+                ));
+              },
+              child: const Text("노아"),
                     return const ClabView();
+                  },
+                ));
+              },
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(
+                  builder: (context) {
+                    return const NoahView();
                   },
                 ));
               },
